@@ -178,3 +178,10 @@ micromamba activate rayeval
 pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0+cu113 -f https://download.pytorch.org/whl/torch_stable.html
 pip install numpy==1.23.5 nuscenes-devkit pyquaternion tqdm prettytable pillow ninja pandas pyyaml
 ```
+
+## Acknowledgments
+We would like to thank the following projects for their code and resources:
+- [SparseOcc](https://github.com/MCG-NJU/SparseOcc) for data-preparation and evaluation code foundations.
+- [MMDetection3D](https://github.com/open-mmlab/mmdetection3d) for training experiment infrastructure.
+- [STCOcc](https://github.com/lzzzzzm/STCOcc) for experiment code and configurations.
+- This project was provided with computing AI and storage resources by GENCI at IDRIS thanks to the grant `2026-AD011012128R5` on the supercomputer Jean Zay's H100 partition.
