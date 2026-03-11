@@ -1,0 +1,89 @@
+dynamic_prompt_class_names:
+  - car
+  - truck
+
+thing_stuff:
+  thing_prompt_class_names:
+    - car
+    - truck
+    - construction_vehicle
+    - bus
+    - trailer
+    - motorcycle
+    - bicycle
+    - pedestrian
+
+occupancy:
+  priority_object_classes:
+    - bicycle
+    - car
+    - construction_vehicle
+    - motorcycle
+    - pedestrian
+    - traffic_cone
+    - trailer
+    - truck
+  thin_object_classes:
+    - bicycle
+    - motorcycle
+    - pedestrian
+    - traffic_cone
+  driveable_class_preference:
+    - driveable_surface
+    - road
+    - parking
+    - road_marking
+    - curb
+
+occ3d_nuscenes:
+  class_names:
+    - others
+    - barrier
+    - bicycle
+    - bus
+    - car
+    - construction_vehicle
+    - motorcycle
+    - pedestrian
+    - traffic_cone
+    - trailer
+    - truck
+    - driveable_surface
+    - other_flat
+    - sidewalk
+    - terrain
+    - manmade
+    - vegetation
+    - free
+  class_mapping_updates:
+    other_vehicle: car
+    bicyclist: bicycle
+    motorcyclist: motorcycle
+    building: manmade
+    road_marking: driveable_surface
+    parking: driveable_surface
+    other_ground: terrain
+    road: driveable_surface
+    walkable: terrain
+    curb: sidewalk # changed it from drivable surface on 22/02
+    wall: manmade
+    traffic_light: manmade
+    traffic_sign: manmade
+    ground: terrain
+    pole: manmade
+    trunk: vegetation
+    vegetation: vegetation
+    fence: manmade
+    unlabeled: others
+    grass: terrain
+    dirt: terrain
+    flat: terrain
+    flat_surface: terrain
+    flat_vegetation: terrain
+    flat-vegetation: terrain
+    flat vegetation: terrain
+    driveable surface: driveable_surface
+    SUV: car
+    bulldozer: construction_vehicle
+    crane: construction_vehicle
+    tree: vegetation

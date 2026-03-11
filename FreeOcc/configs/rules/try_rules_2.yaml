@@ -1,0 +1,37 @@
+rules :
+    road_marking:
+        "over": ["road", "sidewalk","terrain"]
+        "under": []
+    pothole:
+        "over": ["road", "sidewalk","terrain"]
+        "under": []
+    manhole:
+        "over": ["road", "sidewalk","terrain"]
+        "under": []
+    road:
+        "over": ["ground"]
+        "under": ["road_marking", "pothole", "manhole"]
+    sidewalk:
+        "over": ["ground"]
+        "under": ["road_marking", "pothole", "manhole"]
+    terrain:
+        "over": ["ground", "vegetation", "grass", "dirt"]
+        "under": ["road_marking", "pothole", "manhole"]
+    ground:
+        "over": ["vegetation"]
+        "under": ["road", "sidewalk","terrain"]
+    building:
+        "over": ["wall"]
+        "under": []
+    wall:
+        "over": []
+        "under": ["building"]
+    vegetation:
+        "over": []
+        "under": ["ground", "terrain"]
+    grass:
+        "over": []
+        "under": ["terrain"]
+    dirt:
+        "over": []
+        "under": ["terrain"]
