@@ -179,9 +179,29 @@ pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0+cu1
 pip install numpy==1.23.5 nuscenes-devkit pyquaternion tqdm prettytable pillow ninja pandas pyyaml
 ```
 
+## Citation
+
+If you use this repository, please cite the FreeOcc paper. The proceedings citation will be updated when available.
+
+```bibtex
+@misc{caunes2026freeocc,
+      title={FreeOcc: Training-free Panoptic Occupancy Prediction via Foundation Models}, 
+      author={Andrew Caunes and Thierry Chateau and Vincent Fremont},
+      year={2026},
+      eprint={2603.06166},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2603.06166}, 
+}
+```
+
 ## Acknowledgments
-We would like to thank the following projects for their code and resources:
+
+We thank the following projects for their code and resources:
+
 - [SparseOcc](https://github.com/MCG-NJU/SparseOcc) for data-preparation and evaluation code foundations.
 - [MMDetection3D](https://github.com/open-mmlab/mmdetection3d) for training experiment infrastructure.
 - [STCOcc](https://github.com/lzzzzzm/STCOcc) for experiment code and configurations.
-- This project was provided with computing AI and storage resources by GENCI at IDRIS thanks to the grant `2026-AD011012128R5` on the supercomputer Jean Zay's H100 partition.
+- [SAM3](https://github.com/facebookresearch/sam3) and [MapAnything](https://github.com/facebookresearch/map-anything) for the foundation-model components used by the pipeline.
+
+This project was provided with computing AI and storage resources by GENCI at IDRIS thanks to the grant `2026-AD011012128R5` on the Jean Zay H100 partition.
